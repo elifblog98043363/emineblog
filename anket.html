@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anket</title>
+    <script>
+        function checkAnswer(questionNumber, correctAnswer) {
+            let selectedAnswer = document.querySelector(`input[name="q${questionNumber}"]:checked`).value;
+            let resultElement = document.getElementById(`result${questionNumber}`);
+            if (selectedAnswer == correctAnswer) {
+                resultElement.innerHTML = "Doğru!";
+                resultElement.style.color = "green";
+            } else {
+                resultElement.innerHTML = `Yanlış! Doğru cevap: ${correctAnswer}`;
+                resultElement.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Anket</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="projeler.html">Projeler</a></li>
+            <li><a href="anket.html">Anket</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Soru 1 -->
+    <h3>1. Türkiye'nin başkenti neresidir?</h3>
+    <input type="radio" name="q1" value="A">A) İstanbul<br>
+    <input type="radio" name="q1" value="B">B) Ankara<br>
+    <input type="radio" name="q1" value="C">C) İzmir<br>
+    <input type="radio" name="q1" value="D">D) Bursa<br>
+    <button onclick="checkAnswer(1, 'B')">Cevabı Kontrol Et</button>
+    <p id="result1"></p>
+
+    <!-- Soru 2 -->
+    <h3>2. Dünya'nın en büyük okyanusu hangisidir?</h3>
+    <input type="radio" name="q2" value="A">A) Atlantik Okyanusu<br>
+    <input type="radio" name="q2" value="B">B) Hint Okyanusu<br>
+    <input type="radio" name="q2" value="C">C) Arktik Okyanusu<br>
+    <input type="radio" name="q2" value="D">D) Pasifik Okyanusu<br>
+    <button onclick="checkAnswer(2, 'D')">Cevabı Kontrol Et</button>
+    <p id="result2"></p>
+
+    <!-- Soru 3 -->
+    <h3>3. Leonardo da Vinci hangi eseri ile ünlüdür?</h3>
+    <input type="radio" name="q3" value="A">A) Yıldızlı Gece<br>
+    <input type="radio" name="q3" value="B">B) Çığlık<br>
+    <input type="radio" name="q3" value="C">C) Mona Lisa<br>
+    <input type="radio" name="q3" value="D">D) Guernica<br>
+    <button onclick="checkAnswer(3, 'C')">Cevabı Kontrol Et</button>
+    <p id="result3"></p>
+
+    <!-- Soru 4 -->
+    <h3>4. En büyük gezegen hangisidir?</h3>
+    <input type="radio" name="q4" value="A">A) Mars<br>
+    <input type="radio" name="q4" value="B">B) Dünya<br>
+    <input type="radio" name="q4" value="C">C) Jüpiter<br>
+    <input type="radio" name="q4" value="D">D) Venüs<br>
+    <button onclick="checkAnswer(4, 'C')">Cevabı Kontrol Et</button>
+    <p id="result4"></p>
+
+    <!-- Soru 5 -->
+    <h3>5. Mısır Piramitleri nerede bulunur?</h3>
+    <input type="radio" name="q5" value="A">A) Kahire<br>
+    <input type="radio" name="q5" value="B">B) Luksor<br>
+    <input type="radio" name="q5" value="C">C) Giza<br>
+    <input type="radio" name="q5" value="D">D) İskenderiye<br>
+    <button onclick="checkAnswer(5, 'C')">Cevabı Kontrol Et</button>
+    <p id="result5"></p>
+
+    <!-- Soru 6 -->
+    <h3>6. İlk Nobel Ödülü hangi alanda verilmiştir?</h3>
+    <input type="radio" name="q6" value="A">A) Fizik<br>
+    <input type="radio" name="q6" value="B">B) Kimya<br>
+    <input type="radio" name="q6" value="C">C) Barış<br>
+    <input type="radio" name="q6" value="D">D) Edebiyat<br>
+    <button onclick="checkAnswer(6, 'A')">Cevabı Kontrol Et</button>
+    <p id="result6"></p>
+
+    <!-- Soru 7 -->
+    <h3>7. 1. Dünya Savaşı ne zaman başladı?</h3>
+    <input type="radio" name="q7" value="A">A) 1912<br>
+    <input type="radio" name="q7" value="B">B) 1914<br>
+    <input type="radio" name="q7" value="C">C) 1916<br>
+    <input type="radio" name="q7" value="D">D) 1918<br>
+    <button onclick="checkAnswer(7, 'B')">Cevabı Kontrol Et</button>
+    <p id="result7"></p>
+
+    <!-- Soru 8 -->
+    <h3>8. İnsan genom projesi hangi yıl tamamlanmıştır?</h3>
+    <input type="radio" name="q8" value="A">A) 2000<br>
+    <input type="radio" name="q8" value="B">B) 2003<br>
+    <input type="radio" name="q8" value="C">C) 2006<br>
+    <input type="radio" name="q8" value="D">D) 2009<br>
+    <button onclick="checkAnswer(8, 'B')">Cevabı Kontrol Et</button>
+    <p id="result8"></p>
+
+    <!-- Soru 9 -->
+    <h3>9. Japonya'nın eski adı nedir?</h3>
+    <input type="radio" name="q9" value="A">A) Nippon<br>
+    <input type="radio" name="q9" value="B">B) Jomon<br>
+    <input type="radio" name="q9" value="C">C) Edo<br>
+    <input type="radio" name="q9" value="D">D) Yamato<br>
+    <button onclick="checkAnswer(9, 'D')">Cevabı Kontrol Et</button>
+    <p id="result9"></p>
+
+    <!-- Soru 10 -->
+    <h3>10. Dünyanın en yüksek şelalesi neresidir?</h3>
+    <input type="radio" name="q10" value="A">A) Niagara Şelalesi<br>
+    <input type="radio" name="q10" value="B">B) Victoria Şelalesi<br>
+    <input type="radio" name="q10" value="C">C) Angel Şelalesi<br>
+    <input type="radio" name="q10" value="D">D) Iguazu Şelalesi<br>
+    <button onclick="checkAnswer(10, 'C')">Cevabı Kontrol Et</button>
+    <p id="result10"></p>
+
+</body>
+</html>
+

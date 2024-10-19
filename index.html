@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d);
+            background-size: 300% 300%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            padding: 20px;
+        }
+        .intro {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BLOĞUMA HOŞGELDİNİZ </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="projeler.html">Projeler</a></li>
+            <li><a href="anket.html">Anket</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <h2>Hoşgeldiniz!</h2>
+            <p>Merhaba! Ben Emine Aslanbaş,seyahat etmekten ve yeni kültürler keşfetmekten büyük keyif alırım .Bu web sitesinde de sizlerle hayatımı paylaşmayı planlıyorum. Hakkımda daha fazla bilgi edinmek için sayfalar arasında gezinebilirsiniz.</p>
+        </div>
+        <img src="resim.jpg" alt="Örnek Resim" />
+    </div>
+</body>
+</html>
